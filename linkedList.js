@@ -31,18 +31,19 @@ function linkedListGenerator(){
     };
     if (head === null){
       head = newNode;
-    }else if(head === tail){
+    } else if (head === tail){
       head.next = newNode;
-    }else if(tail.next === null){
+    } else if (tail.next === null){
       tail.next = newNode;
     }
     return newNode;
   }
 
-  function remove(){
+  function get(num){
+    
   }
 
-  function get(){
+  function remove(){
   }
 
   function insert(){
@@ -52,8 +53,8 @@ function linkedListGenerator(){
     getHead: getHead,
     getTail: getTail,
     add: add,
-    remove: remove,
     get: get,
+    remove: remove,
     insert: insert,
   };
 }
