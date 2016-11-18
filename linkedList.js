@@ -20,7 +20,6 @@ function linkedListGenerator(){
         return curNode;
       }
     }
-    console.log("this is the getTail", curNode);
     return curNode;
   }
 
@@ -37,14 +36,6 @@ function linkedListGenerator(){
     }else if(tail.next === null){
       tail.next = newNode;
     }
-
-/*
-    if (gotTail !== null){
-      if (gotTail.next === null){
-        gotTail.next === }
-    }*/
-    console.log("this is the head", head);
-    console.log("this is the tail", newNode);
     return newNode;
   }
 
