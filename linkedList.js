@@ -39,14 +39,63 @@ function linkedListGenerator(){
     return newNode;
   }
 
-  function get(num){
+function get(num){
+      let curNode = head;
+      for (let i = 0; i < num; i++) {
+        if(curNode.next === null){
+          return false;
+        }
+        else{
+          curNode = curNode.next;
+        }
+      }
+        return curNode;
+      }
+
+/*  function get(num){
+    let curNode = head;
+    if (num === 0){
+      return curNode;
+    } else {
+      for (curNode=0; curNode<=num; curNode++){
+        return curNode;
+      }
+    }
+  }*/
+
+  function remove(kill){
+    kill = get();
     
+    let prevNode.next = kill.next;
   }
 
-  function remove(){
-  }
+/*  function _getLength(){
+    let length = 0;
+    let node = head;
+    while (node.next !== null){
+      length++;
+      node = node.next; 
+    }
+    return length;
+  }*/
 
-  function insert(){
+  function insert(value, index){
+/*    if (index < 0, _getLength()){
+      return false;
+    }
+    let newNode = {
+      value: value,
+      next: null,
+    };
+    let nextNode = getHead;
+    let prevNode = get(index-1); 
+    let nextNode = prevNode.next;
+    // curNode (the val being added) becomes prevNode's next
+    let curNode = {
+      value: value,
+      next: null, };
+    prevNode.next = curNode;
+    curNode.next = nextNode;*/
   }
 
   return {
@@ -58,9 +107,3 @@ function linkedListGenerator(){
     insert: insert,
   };
 }
-
-var ll = linkedListGenerator();
-
-var head = ll.getHead();
-
-//ll.add("cat");
